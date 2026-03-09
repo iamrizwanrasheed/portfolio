@@ -30,49 +30,85 @@ export const skills = {
 
 export const projects = [
   {
-    title: "LifeCycle PLM",
+    title: "Flight Studio",
     description:
-      "Enterprise product lifecycle management platform for global fashion brands. Architected the tech pack studio, real-time collaboration workflows, and a modular design system — reducing product development cycles by 40% for clients managing 10,000+ SKUs.",
-    tech: ["React.js", "NestJS", "TypeScript", "MySQL", "WebSockets", "Docker"],
+      "Built a React site with Tailwind CSS and fullPage.js to showcase client brands and technology. Features smooth full-page scrolling, polished animations, and a modern design system tailored for brand storytelling.",
+    tech: ["React.js", "Tailwind CSS", "fullPage.js", "JavaScript"],
     github: "https://github.com/iamrizwanrasheed",
-    live: "https://www.lifecycleplm.com",
+    live: "https://flight-studio.vercel.app",
     gradient: "from-violet-500 to-purple-600",
   },
   {
-    title: "Amaze Creator Commerce",
+    title: "LiveCycle",
     description:
-      "All-in-one commerce platform empowering 200M+ storefront visits for creators to monetize audiences. Built the Shopify-integrated design tool and reusable component library with Tailwind CSS and Stencil.js, enabling merchants to launch custom landing pages in minutes.",
-    tech: ["React.js", "Stencil.js", "Tailwind CSS", "TypeScript", "Shopify API"],
+      "LiveCycle helps fashion brands turn ideas into reality by simplifying techpack creation. Architected the tech pack studio, real-time collaboration workflows, and a modular design system — reducing product development cycles for clients managing thousands of SKUs.",
+    tech: ["React.js", "NestJS", "TypeScript", "MySQL", "WebSockets", "Docker"],
     github: "https://github.com/iamrizwanrasheed",
-    live: "https://www.amaze.co",
+    live: "https://app.lifecycleplm.com",
     gradient: "from-cyan-500 to-blue-600",
   },
   {
-    title: "Outfts E-Commerce",
+    title: "GoDoctor",
     description:
-      "Social commerce platform blending fashion discovery with e-commerce. Built the multi-vendor marketplace from the ground up with Next.js — featuring real-time inventory sync, influencer storefronts, Stripe payments, and an analytics dashboard serving 5,000+ daily active users.",
-    tech: ["Next.js", "Node.js", "MongoDB", "Redux", "Stripe", "Tailwind CSS"],
+      "Developed a React-based MCQ test platform featuring domain-specific tests for doctors. Includes timed assessments, score tracking, and categorized question banks across medical specialties.",
+    tech: ["React.js", "Node.js", "TypeScript", "REST APIs", "Tailwind CSS"],
     github: "https://github.com/iamrizwanrasheed",
-    live: "https://outfts.com",
+    live: "https://godoctor.com",
     gradient: "from-emerald-500 to-teal-600",
   },
   {
-    title: "Outfts Mobile App",
+    title: "Outfts",
     description:
-      "Cross-platform React Native app for fashion social commerce. Features include personalized feeds, wishlist management, push notifications, and a seamless checkout flow — achieving a 4.6-star rating and 30% higher conversion than the mobile web experience.",
-    tech: ["React Native", "Redux", "TypeScript", "REST APIs", "Firebase"],
+      "Created a social fashion marketplace for brands and influencers to showcase shoppable wardrobes. Features multi-vendor storefronts, real-time inventory sync, Stripe payments, and an analytics dashboard serving thousands of daily active users.",
+    tech: ["Next.js", "Node.js", "MongoDB", "Redux", "Stripe", "Tailwind CSS"],
     github: "https://github.com/iamrizwanrasheed",
-    live: "https://outfts.com",
+    live: "https://outfits.com",
     gradient: "from-orange-500 to-pink-600",
   },
   {
-    title: "KICS Research Portal",
+    title: "Flight Deck",
     description:
-      "Internal research management platform for Al-Khawarizmi Institute of Computer Science at UET Lahore. Built dashboards for tracking 20+ research labs, project submissions, and resource allocation across multiple departments.",
-    tech: ["React.js", "Node.js", "REST APIs", "Material UI", "MySQL"],
+      "Developed a responsive website with React and Tailwind, featuring an interactive design and seamless user experience. Focused on performance optimization and clean, modern UI patterns.",
+    tech: ["React.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
     github: "https://github.com/iamrizwanrasheed",
-    live: "https://kics.edu.pk",
+    live: "https://flight-deck1.vercel.app",
+    gradient: "from-blue-500 to-indigo-600",
+  },
+  {
+    title: "Progress Client",
+    description:
+      "Developed a visually stunning React application, featuring a responsive design. Built with attention to detail, smooth animations, and a polished user interface for an exceptional browsing experience.",
+    tech: ["React.js", "Tailwind CSS", "JavaScript", "SCSS"],
+    github: "https://github.com/iamrizwanrasheed",
+    live: "https://making-progress.com",
     gradient: "from-amber-500 to-orange-600",
+  },
+  {
+    title: "CheckItOut Web",
+    description:
+      "Developed a React-based video marketplace with video uploads, real-time chat, and a responsive interface. Features a seamless content discovery experience with live interaction capabilities.",
+    tech: ["React.js", "Node.js", "WebSockets", "MongoDB", "REST APIs"],
+    github: "https://github.com/iamrizwanrasheed",
+    live: "",
+    gradient: "from-rose-500 to-red-600",
+  },
+  {
+    title: "CheckItOut Mobile",
+    description:
+      "Developed a React Native mobile app for video uploads, real-time chat, and a responsive interface. Cross-platform app with smooth performance and native-like user experience.",
+    tech: ["React Native", "Redux", "TypeScript", "Firebase", "REST APIs"],
+    github: "https://github.com/iamrizwanrasheed",
+    live: "",
+    gradient: "from-teal-500 to-cyan-600",
+  },
+  {
+    title: "Master of Photography",
+    description:
+      "Developed an art e-commerce site with React, enabling global art sales through a responsive interface. Features gallery browsing, artist profiles, and a streamlined checkout for art collectors.",
+    tech: ["React.js", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
+    github: "https://github.com/iamrizwanrasheed",
+    live: "",
+    gradient: "from-purple-500 to-violet-600",
   },
 ];
 
