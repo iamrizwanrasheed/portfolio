@@ -43,6 +43,10 @@ export const metadata: Metadata = {
     description:
       "Senior Software Engineer with 5+ years of experience building high-performance web and mobile applications.",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   robots: {
     index: true,
     follow: true,
