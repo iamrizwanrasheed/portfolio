@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
-import { navLinks } from "../lib/data";
+import { navLinks, personalInfo } from "../lib/data";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -86,7 +86,14 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href={personalInfo.resume}
+            download="Muhammad_Rizwan_Resume.pdf"
+            className="px-4 py-1.5 text-sm font-medium rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400 hover:bg-primary-500/20 transition-colors duration-300"
+          >
+            Resume
+          </a>
           <ThemeToggle />
         </div>
 
@@ -146,6 +153,20 @@ export default function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
+              <motion.a
+                href={personalInfo.resume}
+                download="Muhammad_Rizwan_Resume.pdf"
+                onClick={() => setIsMobileMenuOpen(false)}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navLinks.length * 0.05 }}
+                className="px-4 py-3 rounded-xl text-sm font-medium text-primary-600 dark:text-primary-400 bg-primary-500/5 hover:bg-primary-500/10 transition-colors flex items-center gap-2"
+              >
+                Resume
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+              </motion.a>
             </div>
           </motion.div>
         )}

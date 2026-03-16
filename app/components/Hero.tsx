@@ -68,10 +68,14 @@ function MagneticButton({
   children,
   className,
   href,
+  download,
+  target,
 }: {
   children: React.ReactNode;
   className: string;
   href: string;
+  download?: string;
+  target?: string;
 }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -88,6 +92,8 @@ function MagneticButton({
     <motion.a
       ref={ref}
       href={href}
+      download={download || undefined}
+      target={target}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setPos({ x: 0, y: 0 })}
       animate={{ x: pos.x, y: pos.y }}
@@ -192,6 +198,16 @@ export default function Hero() {
             View Projects
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 transition-transform group-hover:translate-x-1">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </MagneticButton>
+          <MagneticButton
+            href={personalInfo.resume}
+            download="Muhammad_Rizwan_Resume.pdf"
+            className="px-8 py-4 border border-primary-500/30 dark:border-primary-500/20 rounded-full font-medium hover:bg-primary-500/5 dark:hover:bg-primary-500/[0.03] transition-all duration-300 hover:border-primary-500/50 flex items-center gap-2 text-primary-600 dark:text-primary-400"
+          >
+            Download Resume
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>
           </MagneticButton>
           <MagneticButton

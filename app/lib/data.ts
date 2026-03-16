@@ -6,6 +6,7 @@ export const personalInfo = {
   email: "iamrizwanrasheed@gmail.com",
   github: "https://github.com/iamrizwanrasheed",
   linkedin: "https://linkedin.com/in/iamrizwanrasheed",
+  resume: "/resume.pdf",
   summary:
     "Senior Software Engineer with 6+ years of experience delivering production-grade web and mobile applications for companies across the US, Europe, and Pakistan. I specialize in React, Next.js, React Native, and Node.js — building scalable SaaS platforms, creator commerce tools, and enterprise solutions that serve thousands of users daily.",
 };
